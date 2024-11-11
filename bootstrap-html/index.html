@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+  body {
+    margin: auto;
+    width: 50%;
+  }
+
+  table {
+    border-radius: 10px;
+    width: 100%;
+    /* margin: 15px; */
+  }
+
+  th,
+  td {
+    border: 1px solid rgb(201, 197, 197);
+    padding: 10px;
+    text-align: left;
+  }
+
+  .col-4 {
+    flex: 50%;
+    padding: 10px;
+    height: 300px;
+    width: 50px;
+    border-radius: 30px;
+  }
+
+  .map {
+    margin-bottom: 20px;
+  }
+</style>
+
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <h5 style="text-align: center;">PROGRAM DI MICRODATA INDONESIA</h5>
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="d599ac0b-75d5-4b6a-a875-a5aded132657_169.jpeg" alt="Los Angeles" class="d-block w-100" height="210">
+        </div>
+        <div class="carousel-item">
+          <img src="images.png" alt="Los Angeles" class="d-block w-100" height="210">
+        </div>
+        <div class="carousel-item">
+          <img src="download (1).png" alt="Los Angeles" class="d-block w-100" height="210">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi
+      repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga
+      praesentium optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius
+      earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut! Impedit sit sunt
+      quaerat, odit, tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit, quia. Quo neque error
+      repudiandae fuga? Ipsa laudantium molestias eos sapiente officiis modi at sunt excepturi expedita sint?</p>
+  </div>
+  <ol>
+    <li>html</li>
+    <li>css</li>
+    <li>java script</li>
+    <li> php</li>
+  </ol>
+  <div class="container mt-3">
+    <h2>Bordered Table</h2>
+    <p>The .table-bordered class adds borders on all sides of the table and the cells:</p>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>Moe</td>
+          <td>mary@example.com</td>
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>Dooley</td>
+          <td>july@example.com</td>
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>Dooley</td>
+          <td>july@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="container text-center">
+    <div class="row justify-content-start">
+      <div class="col-4">
+        <img style="border-radius: 10px;" src="d599ac0b-75d5-4b6a-a875-a5aded132657_169.jpeg" alt="microdata"
+          width="300" height="215">
+        <h2>Microdata Indonesia</h2>
+      </div>
+      <div class="col-4">
+        <iframe width="300" height="200" src="Login Form in HTML & CSS.mp4" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h2 style="text-align: center; margin-top: 10px;">
+          <h2>Microdata Indonesia</h2>
+      </div>
+    </div>
+  </div>
+  </div>
+  <h2 style="text-align: center;">BERITA KAMI</h2>
+  <p style="text-align: center;">Menampilkan berita terbaru seputar dunia pemograman</p>
+  <div class="row">
+    <div class="container text-center">
+      <div class="row align-items-center">
+        <div class="col">
+          <img style="border-radius: 10px;" src="images.png" width="200" height="200">
+          <h3 style="text-align: center;">
+            Python 3.12 Resmi Dirilis
+          </h3>
+          <p style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        </div>
+        <div class="col">
+          <img style="border-radius: 10px;" src="images.png" width="200" height="200">
+          <h3 style="text-align: center;">
+            Python 3.12 Resmi Dirilis
+          </h3>
+          <p style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        </div>
+        <div class="col">
+          <img style="border-radius: 10px;" src="images.png" width="200" height="200">
+          <h3 style="text-align: center;">
+            Python 3.12 Resmi Dirilis
+          </h3>
+          <p style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        </div>
+      </div>
+    </div>
+    <h2 style="text-align: center;">KONTAK KAMI</h2>
+    <div class="row">
+      <div class="column">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15888.929996436722!2d105.2896077209974!3d-5.381483900052035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40dac03d097843%3A0x6bb59f4ba9a84e8c!2sPT%20Microdata%20Indonesia%20%7C%20Software%20Developer%20%7C%20IT%20Consultant!5e0!3m2!1sid!2sid!4v1730876096664!5m2!1sid!2sid"
+          width="100%" height="150" style="border:0; margin-bottom: 20px;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div style="text-align: center; width: 50%; margin: auto; font-weight: bold;">
+          <img style="border-radius: 10px;" src="download (1).jpeg" alt="gambar komputer" width="100" height="100">
+          <p><u>Jl. Endro Suratmin No.52d, Way Dadi, Kec. Sukarame, Kota Bandar Lampung, Lampung 35131</u></p>
+        </div>
+        <!-- <div class="row"> -->
+        <div style="display: flex; justify-content: center;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="gambar WhatsApp" width="25"
+            style="margin-right: 5px;">
+          <h4>0852-7878-0909</h4>
+        </div>
+         <!-- </div> -->
+</body>
+</body>
+
+</html>
